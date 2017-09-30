@@ -34,12 +34,12 @@ XLSExtension.prototype.load = function () {
 
   createUI = function () {
     // Button 1
-    var button1 = new Autodesk.Viewing.UI.Button('toolbarXLS');
+    var button1 = new Autodesk.Viewing.UI.Button('toolbarQR');
     button1.onClick = function (e) {
         ForgeXLS.downloadXLSX(documentId, fileName + ".xlsx", token, statusCallback, fileType );/*Optional*/
     };
-    button1.addClass('toolbarXLSButton');
-    button1.setToolTip('Export to .XLSX');
+    button1.addClass('toolbarQRButton');
+    button1.setToolTip('Embed QR Markup');
 
     // SubToolbar
     this.subToolbar = new Autodesk.Viewing.UI.ControlGroup('myAppGroup1');
