@@ -27,7 +27,7 @@ body {
     background-color: #d0d0d0;
 }
 
-.toolbarXLSButton {
+.toolbarQRButton {
     background-image: url(/img/qr.png);
     background-size: 16px;
     background-repeat: no-repeat;
