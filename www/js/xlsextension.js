@@ -38,7 +38,7 @@ XLSExtension.prototype.load = function () {
     button1.onClick = function (e) {
         //ForgeXLS.downloadXLSX(documentId, fileName + ".xlsx", token, statusCallback, fileType );/*Optional*/
         //ForgeXLS.embedQR(documentId,token, statusCallback,fileType);
-        ForgeXLS.embedQR();
+        ForgeXLS.embedQR(statusCallback, fileType);
     };
     button1.addClass('toolbarQRButton');
     button1.setToolTip('Embed QR Markup');
