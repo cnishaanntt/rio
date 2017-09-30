@@ -20,6 +20,14 @@ if (!window.jQuery) alert('jQuery is required for this sample');
 if (!window.XLSX) alert('Sheet JS is required for this sample');
 
 var ForgeXLS = {
+  embedQR:function(status,fileType){
+     if (fileType.indexOf('t') == -1){
+       status(true, 'There is a glitch, please allow us sometime to fix it');
+      return;
+    }
+  }
+  
+  };  
   Utility: {
     Constants: {
       BASE_URL: 'https://developer.api.autodesk.com',
