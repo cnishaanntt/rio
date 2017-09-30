@@ -36,7 +36,7 @@ XLSExtension.prototype.load = function () {
     // Button 1
     var button1 = new Autodesk.Viewing.UI.Button('toolbarQR');
     button1.onClick = function (e) {
-        ForgeXLS.downloadXLSX(documentId, fileName + ".xlsx", token, statusCallback, fileType );/*Optional*/
+        //ForgeXLS.downloadXLSX(documentId, fileName + ".xlsx", token, statusCallback, fileType );/*Optional*/
     };
     button1.addClass('toolbarQRButton');
     button1.setToolTip('Embed QR Markup');
