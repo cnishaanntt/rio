@@ -21,8 +21,10 @@ if (!window.XLSX) alert('Sheet JS is required for this sample');
 
 var ForgeXLS = {
   embedQR:function(status){
+    if(status){
        status(false, 'There is a glitch, please allow us sometime to fix it'); 
        status(true, 'There is a glitch, please allow us sometime to fix it');  
+    }
   }
   
   };  
